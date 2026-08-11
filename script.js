@@ -12,10 +12,14 @@ const songs = [
     },
 
     {
-        name: "Kumar_Sanu_Hit_Songs_90s_Superhit.mp3",
+        name: "Tumhein_Dillagi_Bhool_Jani_Padegi.mp3",
         artist: "Playing Now",
-        file: "Kumar_Sanu_Hit_Songs_90s_Superhit.mp3"
-    }
+        file: "Tumhein_Dillagi_Bhool_Jani_Padegi.mp3"
+    },
+    { 
+        name:"Mere_Mehboob_Qayamat_Hogi.mp3",
+        artist:"Playing Now",
+        file:"Mere_Mehboob_Qayamat_Hogi.mp3"
 ];
 
 
