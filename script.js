@@ -2,19 +2,19 @@ const songs = [
     {
         name: "Dekhne_Walon_Ne_Udit_Narayan.mp3",
         artist: "Playing Now",
-        file: "songs/Dekhne_Walon_Ne_Udit_Narayan.mp3"
+        file: "Dekhne_Walon_Ne_Udit_Narayan.mp3"
     },
 
     {
         name: "Hum_Tumko_Nigah_me.mp3",
         artist: "Playing Now",
-        file: "songs/Hum_Tumko_Nigah_me.mp3"
+        file: "Hum_Tumko_Nigah_me.mp3"
     },
 
     {
         name: "Kumar_Sanu_Hit_Songs_90s_Superhit.mp3",
         artist: "Playing Now",
-        file: "songs/Kumar_Sanu_Hit_Songs_90s_Superhit.mp3"
+        file: "Kumar_Sanu_Hit_Songs_90s_Superhit.mp3"
     }
 ];
 
