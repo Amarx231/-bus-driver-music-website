@@ -16,11 +16,12 @@ const songs = [
         artist: "Playing Now",
         file: "Tumhein_Dillagi_Bhool_Jani_Padegi.mp3"
     },
-    { 
-        name:"Mere_Mehboob_Qayamat_Hogi.mp3",
-        artist:"Playing Now",
-        file:"Mere_Mehboob_Qayamat_Hogi.mp3"
-    }     
+
+    {
+        name: "Mere_Mehboob_Qayamat_Hogi.mp3",
+        artist: "Playing Now",
+        file: "Mere_Mehboob_Qayamat_Hogi.mp3"
+    }
 ];
 
 
@@ -50,15 +51,20 @@ function loadSong(index) {
 
     artist.textContent = songs[index].artist;
 
+    audio.load();
 }
 
 
 // PLAY
 function playSong() {
 
-    audio.play();
-
-    playButton.textContent = "⏸";
+    audio.play()
+        .then(() => {
+            playButton.textContent = "⏸";
+        })
+        .catch(error => {
+            console.log("Song play error:", error);
+        });
 
 }
 
@@ -69,11 +75,10 @@ function pauseSong() {
     audio.pause();
 
     playButton.textContent = "▶";
-
 }
 
 
-// PLAY / PAUSE BUTTON
+// PLAY / PAUSE
 playButton.addEventListener("click", () => {
 
     if (audio.paused) {
@@ -146,7 +151,7 @@ audio.addEventListener("timeupdate", () => {
 });
 
 
-// PROGRESS BAR CLICK
+// PROGRESS BAR
 progress.addEventListener("input", () => {
 
     if (audio.duration) {
@@ -159,7 +164,7 @@ progress.addEventListener("input", () => {
 });
 
 
-// SONG FINISH → NEXT SONG
+// SONG FINISHED
 audio.addEventListener("ended", () => {
 
     currentSong++;
