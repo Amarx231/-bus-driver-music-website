@@ -20,6 +20,7 @@ const songs = [
         name:"Mere_Mehboob_Qayamat_Hogi.mp3",
         artist:"Playing Now",
         file:"Mere_Mehboob_Qayamat_Hogi.mp3"
+    }     
 ];
 
 
