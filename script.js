@@ -18,9 +18,9 @@ const songs = [
 },
 
 {
-    name: "Mere_Mehbboob_Qayamat_Hogi.mp3",
+    name: "Mere_Mehboob_Qayamat_Hogi.mp3",
     artist: "Playing Now",
-    file: "Mere_Mehbboob_Qayamat_Hogi.mp3"
+    file: "Mere_Mehboob_Qayamat_Hogi.mp3"
    }
 ];
 
